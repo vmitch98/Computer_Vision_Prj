@@ -1,5 +1,10 @@
-pip install torch
-pip install torchvision
-pip install pillow
-pip install fastapi
-pip install loguru
+pip install torch # Installs the PyTorch library, an open-source machine learning framework, for tasks like neural networks
+pip install torchvision # Installs the torchvision package, providing tools to work with datasets, models, and transformations for PyTorch-based image and video tasks
+pip install pillow # nstalls the Pillow library, a powerful Python Imaging Library, for image processing tasks.
+pip install fastapi # Installs FastAPI, a modern, fast, and highly performant web framework for building APIs with Python.
+pip install loguru # Installs Loguru, a logging library that simplifies the process of setting up and managing logs in Python applications.
+pip install ultralytics # Installs Ultralytics, a package for training and deploying deep learning models, often used in computer vision tasks.
+pip install pandas # Installs pandas, a popular data manipulation library, for efficiently working with structured data.
+pip install logger # Installs to log messages that you want to see.
+pip install python-multipart # Installs python-multipart, a library for parsing HTTP multipart requests, commonly used for file uploads in web applications.
+pip install uvicorn # Installs uvicorn, an ASGI server for running asynchronous Python web applications, often used to deploy FastAPI apps.
