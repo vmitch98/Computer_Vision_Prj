@@ -1,12 +1,12 @@
 from PIL import Image
-import io
-import pandas as pd
-import numpy as np
+import io  # provides tools for working with streams of binary data.
+import pandas as pd  # used for data manipulation and analysis.
+import numpy as np  # used for numerical computations and array operations.
 from typing import Optional
 from ultralytics import YOLO
-# # from ultralytics.yolo.utils.plotting import Annotator, colors
+# from ultralytics.yolo.utils.plotting import Annotator, colors
 # from ultralytics.data.annotator import auto_annotate
-import cv2
+import cv2 # used for computer vision tasks such as image and video processing.
 from fastapi import FastAPI, File, status
 from fastapi.responses import StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
@@ -14,7 +14,7 @@ from fastapi.exceptions import HTTPException
 import logger
 from loguru import logger
 import json
-import sys
+import sys  # Imports the built-in module for interpreter-related interactions and variables.
 
 app = FastAPI(
     title="Yolov8 Garbage Detection FastAPI ",
