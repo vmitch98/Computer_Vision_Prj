@@ -1,0 +1,5 @@
+pip install torch
+pip install torchvision
+pip install pillow
+pip install fastapi
+pip install loguru
