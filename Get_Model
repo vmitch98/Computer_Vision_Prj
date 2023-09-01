@@ -1,0 +1,29 @@
+def get_model_predict(model: YOLO, input_image: Image, save: bool = False, image_size: int = 640, iou: float =0.4 , conf: float = 0.1, show_conf: bool= True, augment: bool = False) -> pd.DataFrame:
+    predictions = model.predict(
+        imgsz=image_size,
+        source=input_image,
+        conf=conf,
+        save=save,
+        augment=augment,
+        show_conf=show_conf,
+        iou=iou,
+        flipud=0.0,
+        fliplr=0.0,
+        mosaic=0.0,
+    )
+
+CHANGED FROM
+
+def get_model_predict(model: YOLO, input_image: Image, save: bool = False, image_size: int = 640, conf: float = 0.5, augment: bool = False) -> pd.DataFrame:
+    predictions = model.predict(
+        imgsz=image_size,
+        source=input_image,
+        conf=conf,
+        save=save,
+        augment=augment,
+        flipud=0.0,
+        fliplr=0.0,
+        mosaic=0.0,
+    )
+
+pass sql - password
